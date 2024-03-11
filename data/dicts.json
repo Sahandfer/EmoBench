@@ -1,0 +1,317 @@
+{
+    "Prompts": {
+        "System": {
+            "en": "**Instructions**\nIn this task, you are presented with a scenario, a question, and multiple choices.\nPlease carefully analyze the scenario and take the perspective of the individual involved.\n\n**Note**\nProvide only one single correct answer to the question and respond only with the corresponding letter. Do not provide explanations for your response.",
+            "zh": "**说明**\n在这项任务中，你会遇到一个场景、一个问题以及多个选项。\n请仔细分析场景，并从涉及到的个体的角度思考。\n**注意**\n请对问题给出唯一正确答案，并且只用相应的字母回答。\n不需要为你的回答提供解释。"
+        },
+        "System_cot": {
+            "en": "**Instructions**\n1. **Reason**: Read the scenario carefully, paying close attention to the emotions, intentions, and perspectives of the individuals involved. Then, using reason step by step by exploring each option's potential impact on the individual(s) in question. Consider their emotions, previous experiences mentioned in the scenario, and the possible outcomes of each choice.\n2. **Conclude** by selecting the option that best reflects the individual's perspective or emotional response. Your final response should be the letter of the option you predict they would choose, based on your reasoning.\n\n**Note**\nThe last line of your reply should only contain the letter numbering of your final choice.",
+            "zh": "**说明**\n1. **推理**：仔细阅读情境，密切关注其中涉及的个体的情感、意图和观点。然后，通过逐步推理，探讨每个选项对该个体（或个体们）可能产生的影响。考虑他们的情感、情境中提及的以往经历，以及每个选择的可能结果。\n2. **结论**：选择最能反映个体观点或情感反应的选项。你的最终回应应该是你基于推理预测他们会选择的选项的字母。\n\n**注意**：你的回复的最后一行应仅包含你最终选择的字母编号。"
+        },
+        "EU": {
+            "Emotion": {
+                "en": "Scenario:\n{scenario}\nQuestion: What emotion(s) would {subject} ultimately feel in this situation?\nChoices:\n{choices}\n",
+                "zh": "设想:\n{scenario}\n问题:\n在这个情况下，{subject}最终会有什么感觉?\n选项:\n{choices}\n"
+            },
+            "Cause": {
+                "en": "Scenario:\n{scenario}\nQuestion: Why would {subject} feel {emotions} in this situation?\nChoices:\n{choices}\n",
+                "zh": "设想:\n{scenario}\n问题:在这个情况下，{subject}为什么会感觉{emotions}？\n选项:\n{choices}\n"
+            }
+        },
+        "EA": {
+            "en": "Scenario:\n{scenario}\nQuestion: In this scenario, what is the most effective {q_type} for {subject}?\nChoices:\n{choices}\n",
+            "zh": "设想:\n{scenario}\n问题：在这个情况下, 对{subject}来说, 什么是最有效的{q_type}?\n选项:\n{choices}\n"
+        },
+        "no_cot": {
+            "en": "Answer (Only reply with the corresponding letter numbering):\n",
+            "zh": "答案:（仅回复相应的字母编号）:\n"
+        },
+        "cot": {
+            "en": "Answer:\nLet's think step by step\n",
+            "zh": "答案:\n让我们一步步思考\n"
+        }
+    },
+    "Translation": {
+        "Sadness": "伤心",
+        "Anger": "生气",
+        "Joy": "开心",
+        "Fear": "害怕",
+        "Anticipation": "期待",
+        "Trust": "信任",
+        "Disgust": "反感",
+        "Surprise": "惊讶",
+        "Grief": "悲痛",
+        "Rage": "暴怒",
+        "Ecstasy": "狂喜",
+        "Horror": "恐惧",
+        "Vigilance": "警惕",
+        "Admiration": "钦佩",
+        "Loathe": "厌恶",
+        "Amazed": "震惊",
+        "Melancholy": "忧愁",
+        "Annoyance": "气恼",
+        "Relief": "释怀",
+        "Apprehension": "担忧",
+        "Interest ": "感兴趣",
+        "Acceptance": "包容",
+        "Boredom": "厌倦",
+        "Unceratin/Distracted": "彷徨/失神",
+        "Guilt": "愧疚",
+        "Pride": "自豪",
+        "Excitement": "激动",
+        "Hopeful": "充满希望",
+        "Love": "爱护",
+        "Caring": "爱护",
+        "Gratitude": "感激",
+        "Amusement": "娱乐",
+        "Delight": "惊喜",
+        "Disapproval": "反对",
+        "Disappointment": "失望",
+        "Sentimental": "伤感",
+        "Jealousy": "嫉妒",
+        "Pessimism": "悲观",
+        "Remorse": "悔恨",
+        "Hopeless": "绝望",
+        "Embarrassment": "尴尬",
+        "Nervousness": "紧张",
+        "Curiosity": "好奇",
+        "Oblivious": "没意识的",
+        "Indifferent": "不关心",
+        "Unbothered": "无感"
+    },
+    "Emotions": {
+        "Sadness": [
+            "Sadness",
+            "Grief",
+            "Devastation",
+            "Melancholy"
+        ],
+        "Anger": [
+            "Anger",
+            "Rage",
+            "Fury",
+            "Annoyance"
+        ],
+        "Joy": [
+            "Joy",
+            "Ecstasy",
+            "Relief",
+            "Serenity",
+            "Content"
+        ],
+        "Fear": [
+            "Fear",
+            "Horror",
+            "Apprehension"
+        ],
+        "Anticipation": [
+            "Anticipation",
+            "Vigilance",
+            "Interest"
+        ],
+        "Trust": [
+            "Trust",
+            "Admiration",
+            "Impressed",
+            "Acceptance",
+            "Tolerance"
+        ],
+        "Disgust": [
+            "Disgust",
+            "Loathe",
+            "Hate",
+            "Bored"
+        ],
+        "Surprise": [
+            "Surprise",
+            "Amazed",
+            "Uncertain",
+            "Distracted"
+        ],
+        "Guilt": [
+            "Guilt"
+        ],
+        "Pride": [
+            "Pride"
+        ],
+        "Pessimism": [
+            "Pessimism"
+        ],
+        "Remorse": [
+            "Remorse"
+        ],
+        "Curiosity": [
+            "Curiosity"
+        ],
+        "Optimism": [
+            "Optimism",
+            "Excitement",
+            "Hopeful"
+        ],
+        "Love": [
+            "Love",
+            "Caring",
+            "Gratitude"
+        ],
+        "Amusement": [
+            "Amusement",
+            "Delight"
+        ],
+        "Disapproval": [
+            "Disapproval",
+            "Disappointment"
+        ],
+        "Sentimental": [
+            "Sentimental",
+            "Nostalgia"
+        ],
+        "Jealous": [
+            "Jealous",
+            "Envy"
+        ],
+        "Desperation": [
+            "Desperation",
+            "Hopelessness"
+        ],
+        "Shame": [
+            "Shame",
+            "Embarrassment"
+        ],
+        "Nervousness": [
+            "Anxiety",
+            "Nervousness"
+        ],
+        "Neutral": [
+            "Unbothered",
+            "Indifferent",
+            "Oblivious"
+        ]
+    },
+    "Emotions_basic": {
+        "Sadness": [
+            "Sadness"
+        ],
+        "Anger": [
+            "Anger"
+        ],
+        "Joy": [
+            "Joy"
+        ],
+        "Fear": [
+            "Fear"
+        ],
+        "Anticipation": [
+            "Anticipation"
+        ],
+        "Trust": [
+            "Trust"
+        ],
+        "Disgust": [
+            "Disgust"
+        ],
+        "Surprise": [
+            "Surprise"
+        ],
+        "Guilt": [
+            "Joy",
+            "Fear"
+        ],
+        "Pride": [
+            "Joy",
+            "Anger"
+        ],
+        "Curiosity": [
+            "Trust",
+            "Surprise"
+        ],
+        "Optimism": [
+            "Joy",
+            "Anticipation"
+        ],
+        "Love": [
+            "Joy",
+            "Trust"
+        ],
+        "Amusement": [
+            "Joy",
+            "Surprise"
+        ],
+        "Disapproval": [
+            "Sadness",
+            "Surprise"
+        ],
+        "Sentimental": [
+            "Sadness",
+            "Trust"
+        ],
+        "Jealous": [
+            "Sadness",
+            "Anger"
+        ],
+        "Pessimism": [
+            "Sadness",
+            "Anticipation"
+        ],
+        "Remorse": [
+            "Sadness",
+            "Disgust"
+        ],
+        "Desperation": [
+            "Sadness",
+            "Fear"
+        ],
+        "Shame": [
+            "Fear",
+            "Disgust"
+        ],
+        "Nervousness": [
+            "Fear",
+            "Anticipation"
+        ],
+        "Neutral": [
+            "Neutral"
+        ]
+    },
+    "column_names": {
+        "EA": [
+            "Choices",
+            "Label",
+            "Res 1",
+            "Pred 1",
+            "Res 2",
+            "Pred 2",
+            "Res 3",
+            "Pred 3",
+            "Res 4",
+            "Pred 4",
+            "Res 5",
+            "Pred 5"
+        ],
+        "EU": [
+            "Emo Choices",
+            "Emo Label",
+            "Cause Choices",
+            "Cause Label",
+            "Emo Res 1",
+            "Emo Pred 1",
+            "Cause Res 1",
+            "Cause Pred 1",
+            "Emo Res 2",
+            "Emo Pred 2",
+            "Cause Res 2",
+            "Cause Pred 2",
+            "Emo Res 3",
+            "Emo Pred 3",
+            "Cause Res 3",
+            "Cause Pred 3",
+            "Emo Res 4",
+            "Emo Pred 4",
+            "Cause Res 4",
+            "Cause Pred 4",
+            "Emo Res 5",
+            "Emo Pred 5",
+            "Cause Res 5",
+            "Cause Pred 5"
+        ]
+    }
+}
