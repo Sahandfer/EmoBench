@@ -44,7 +44,6 @@ python generate.py \
 *Note*: The chat template for LLama-based inference was adopted from [Chat Templates](https://github.com/chujiezheng/chat_templates).
 
 
-
 **Evaluation**: For evaluating the generated responses, simply run the following:
 
 ```
@@ -61,7 +60,7 @@ python evaluate.py \
 
 `--iter_num`: the number of responses that were generated per sample. Defaults to 5.
 
-`--iter_num`: evaluates all the models regardless of `--model_name`.
+`--eval_all`: evaluates all the models regardless of `--model_name`.
 
 
 ### Supported Models
