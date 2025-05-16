@@ -1,0 +1,35 @@
+base: 
+  en: >
+      Provide only one single correct answer to this question. 
+      Do not provide any additional information or explanations.
+      The response should be in the following JSON format:
+  zh: >
+      只提供一个正确的答案。
+      不要提供任何额外的信息或解释。
+      回复应采用以下JSON格式：
+cot: 
+  en: >
+    Provide a step-by-step reasoning that explores each option's potential impact on the individual(s) in question, considering their emotions, previous experiences mentioned in the scenario, and the possible outcomes of each choice.
+    Then, select the most appropriate answer based on your reasoning.
+    The response should be in the following JSON format:
+  zh: >
+    提供逐步推理，探索每个选项对相关个人的潜在影响，考虑他们的情绪、场景中提到的先前经历以及每个选择的可能结果。
+    然后，根据你的推理选择最合适的答案。
+    回复应采用以下JSON格式：
+EA: 
+  en: |
+    "answer": "<Respond with the corresponding letter numbering>"
+  zh: |
+    "answer": "<用相应的字母进行回答>"
+EU:
+  en: |
+    "answer_q1": "<Respond to the Question 1 with the corresponding letter numbering>",
+    "answer_q2": "<Respond to the Question 2 with the corresponding letter numbering>"
+  zh: |
+    "answer_q1": "<用相应的字母进行回答问题1>",
+    "answer_q2": "<用相应的字母进行回答问题2>"
+reasoning: 
+  en: |
+    "reasoning": "<Step by step reasoning>"
+  zh: |
+    "reasoning": "<逐步推理>"

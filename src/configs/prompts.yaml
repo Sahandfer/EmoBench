@@ -1,0 +1,66 @@
+sys:
+  en: |
+    # Instructions
+    
+    In this task, you are presented with a scenario, a question, and multiple choices. 
+    Carefully analyze the scenario and take the perspective of the individual involved.
+    Then, select the option that best reflects their perspective or emotional response.
+
+    # Output
+  zh: |
+    # 说明
+    在这个任务中，你会面临一个场景、一个问题和多个选项。
+    仔细分析场景，并从相关人员的角度进行思考。
+    然后，选择最能反映他们的观点或情绪反应的选项。
+
+    # 输出
+EA:
+  en: |
+    ## Scenario
+    {scenario}
+    
+    ## Question 
+    In this scenario, what is the most effective {q_type} for {subject}?
+    
+    ## Choices
+    {choices}
+  zh: |
+    ## 场景
+    {scenario}
+    
+    ## 问题
+    在这个场景中，{subject}最有效的{q_type}是什么？
+    
+    ## 选项
+    {choices}
+EU:
+  en: |
+    ## Scenario
+    {scenario}
+    
+    ## Question 1
+    What emotion(s) would {subject} ultimately feel in this situation?
+    
+    ## Choices for Question 1
+    {emo_choices}
+
+    ## Question 2
+    Why would {subject} feel these emotions in this situation?
+
+    ## Choices for Question 2
+    {cause_choices}
+  zh: |
+    ## 场景
+    {scenario}
+    
+    ## 问题 1
+    在这种情况下，{subject}最终会感受到什么情绪？
+    
+    ## 问题 1 的选项
+    {emo_choices}
+
+    ## 问题 2
+    {subject}为什么会在这种情况下感受到这些情绪？
+
+    ## 问题 2 的选项
+    {cause_choices}
